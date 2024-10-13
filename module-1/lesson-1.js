@@ -212,7 +212,80 @@
 // console.log(1 === true);
 // console.log(1 !== true);
 
-const correctPassword = "jqueryismyjam";
-const userPassword = "mangodab3st";
-const isValid = correctPassword === userPassword;
-console.log(isValid);
+// const correctPassword = "jqueryismyjam";
+// const userPassword = "mangodab3st";
+// const isValid = correctPassword === userPassword;
+// console.log(isValid);
+
+// console.log(Number("5"));
+// console.log(Number(true));
+// console.log(Number(false));
+// console.log(Number(undefined));
+
+// console.log("5" * 2);
+// console.log("10" - 5);
+// console.log(5 + true);
+// console.log(5 - true);
+
+// console.log(Number.parseInt("5"));
+// console.log(Number.parseInt("5.5"));
+// console.log(Number.parseInt("5cm"));
+// console.log(Number.parseInt("12.34asdda"));
+// console.log(Number.parseInt("cm5"));
+
+// console.log(Number.parseFloat("5"));
+// console.log(Number.parseFloat("5.5"));
+// console.log(Number.parseFloat("3.14"));
+// console.log(Number.parseFloat("5.5as"));
+// console.log(Number.parseFloat("asd5"));
+
+// const value = "24.5px";
+// const numerical = Number.parseFloat(value);
+// console.log(numerical);
+
+// console.log(Math.floor(1.3));
+// console.log(Math.floor(1.7));
+
+// console.log(Math.ceil(1.3));
+// console.log(Math.ceil(1.7));
+
+// console.log(Math.round(1.2));
+// console.log(Math.round(1.7));
+
+// console.log(Math.max(12, 34, 55, 12, 43));
+// console.log(Math.min(12, 34, 55, 12, 43));
+// console.log(Math.random());
+
+// ==================================
+// Functions
+
+// function doStuff() {
+//   console.log("Log inside multiply function");
+// }
+// doStuff();
+
+// function sayHi() {
+//   console.log("Hello, this is my first function!");
+// }
+// sayHi();
+
+// function multiply(x, y, z) {
+//   console.log(`Result: ${x * y * z}`);
+// }
+// multiply(2, 3, 5);
+// multiply(4, 8, 12);
+
+// function add(a, b, c) {
+//   console.log(`Addition result equals ${a + b + c}`);
+// }
+// add(15, 27, 10);
+// add(10, 20, 30);
+// add(5, 10, 15);
+
+function multiply(a, b, c) {
+  const product = a * b * c;
+  return product;
+}
+
+const result = multiply(2, 3, 5);
+console.log(result);
