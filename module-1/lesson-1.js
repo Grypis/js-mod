@@ -88,11 +88,11 @@
 // pricePerItem = 3500;
 // console.log(pricePerItem);
 
-const pricePerItem = 3500;
-const orderedQuantity = 4;
+// const pricePerItem = 3500;
+// const orderedQuantity = 4;
 
-const totalPrice = pricePerItem * orderedQuantity;
-console.log(totalPrice);
+// const totalPrice = pricePerItem * orderedQuantity;
+// console.log(totalPrice);
 
 // ===========================================
 // Рядки
@@ -115,3 +115,104 @@ console.log(totalPrice);
 // // const message = "Welcome " + username + "!";
 // const message = `Welcome ${username}!`;
 // console.log(message);
+
+// console.log(String(5));
+// console.log(String(true));
+// console.log(String(false));
+// console.log(String(null));
+// console.log(String(undefined));
+
+// console.log("5" + 3);
+// console.log("5" + true);
+// console.log("5" + false);
+// console.log("5" + null);
+// console.log("5" + undefined);
+
+// const guestName = "Mango";
+// const roomNumber = 207;
+// // const greeting =
+// //   "Welcome " + guestName + ", your room number is " + roomNumber + "!";
+// const greeting = `Welcome ${guestName}, your room number is ${roomNumber}! `;
+// console.log(greeting);
+
+// const productName = "Droid";
+// const pricePerItem = 3500;
+// // Change code below this line
+// const message = `You picked ${productName}, price per item is ${pricePerItem} credits`;
+// console.log(message);
+
+// const pricePerDroid = 800;
+// const orderedQuantity = 6;
+// const deliveryFee = 50;
+// const totalPrice = `${pricePerDroid * orderedQuantity + deliveryFee}`;
+// console.log(totalPrice);
+// const message = `You ordered droids worth ${totalPrice} credits`;
+// console.log(message);
+
+// const productName = "Repair droid";
+// console.log(productName.length);
+// console.log("Repair droid".length);
+
+// const username = "Poly";
+// const message = `Username ${username} is ${username.length} characters long`;
+// console.log(message);
+
+// const product = "Repair droid";
+// console.log(product[0]);
+// console.log(product[5]);
+// console.log(product[11]);
+
+// const product = "Repair droid";
+// const lastElementIndex = product.length - 1;
+// console.log(product[lastElementIndex]);
+
+// const product = "Repair droid";
+// console.log(product[product.length - 1]);
+
+// const courseTopic = "JavaScript essentials";
+// const courseTopicLength = courseTopic.length;
+// console.log(courseTopicLength);
+// const firstElement = courseTopic[0];
+// console.log(firstElement);
+// const lastElement = courseTopic[courseTopic.length - 1];
+// console.log(lastElement);
+
+// let product = "Droid";
+// console.log(product);
+// product = "DrOid";
+// console.log(product);
+
+// ===================================
+// Оператори порівняння
+
+// const a = 2;
+// const b = 5;
+// console.log(a > b);
+// console.log(b > a);
+// console.log(a >= b);
+// console.log(b >= a);
+// console.log(a < b);
+// console.log(b < a);
+// console.log(a <= b);
+// console.log(b <= a);
+
+// const age = 16;
+// const isAdult = 18 <= age;
+// console.log(isAdult);
+
+// console.log(5 == 5);
+// console.log(5 == 3);
+// console.log(5 != 5);
+// console.log(5 != 3);
+
+// console.log(5 === 5);
+// console.log(5 === "5");
+// console.log(5 !== "5");
+// console.log(5 !== 5);
+// console.log(1 === true);
+// console.log(1 !== true);
+
+const correctPassword = "jqueryismyjam";
+const userPassword = "mangodab3st";
+const isValid = correctPassword === userPassword;
+console.log(isValid);
