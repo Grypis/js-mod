@@ -282,10 +282,52 @@
 // add(10, 20, 30);
 // add(5, 10, 15);
 
-function multiply(a, b, c) {
-  const product = a * b * c;
-  return product;
-}
+// function multiply(a, b, c) {
+//   const product = a * b * c;
+//   return product;
+// }
+// const result = multiply(2, 3, 5);
+// console.log(result);
 
-const result = multiply(2, 3, 5);
-console.log(result);
+// function multiply(a, b, c) {
+//   return a * b * c;
+// }
+// const result = multiply(2, 3, 5);
+// console.log(result);
+
+// function multiply(a, b, c) {
+//   const product = a * b * c;
+// }
+// const result = multiply(2, 3, 5);
+// console.log(result);
+
+// function multiply(a, b, c) {
+//   console.log("Code before return");
+//   return a * b * c;
+//   console.log("Code after return");
+// }
+// console.log(multiply(2, 3, 5));
+
+// function multiply(a, b, c) {
+//   console.log(`result ${a * b * c}`);
+// }
+// console.log("Log before");
+// multiply(2, 3, 5);
+// console.log("Log after");
+
+// const value = "I`m a global variable";
+// function foo() {
+//   console.log(value);
+// }
+// foo();
+// console.log(value);
+
+// function makeMessage(name, price) {
+//   return `You picked ${name}, price per item is ${price} credits`;
+// }
+// console.log(makeMessage("Radar", 6150));
+
+// function calculateTotalPrice(orderedQuantity, pricePerItem) {
+//   return orderedQuantity * pricePerItem;
+// }
+// console.log(calculateTotalPrice(5, 100));
