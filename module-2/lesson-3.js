@@ -326,3 +326,136 @@ console.log(3 && false); // false
 console.log(false && 3); // false
 console.log(0 && ""); // 0
 console.log("" && 0); // "" */
+
+/* const a = 20;
+console.log(a > 10 && a < 30); // true && true -> true
+const b = 50;
+console.log(b > 10 && b < 30); // true && false -> false
+console.log(b > 80 && b < 120); // false && true -> false
+ */
+
+/* const screenWidth = 700;
+const sm = 320;
+const md = 768;
+const lg = 1200;
+if (screenWidth <= sm) {
+  console.log("Mobile screen");
+} else if (screenWidth > sm && screenWidth <= md) {
+  console.log("Tablet screen");
+} else if (screenWidth > md && screenWidth <= lg) {
+  console.log("Desktop screen");
+} else {
+  console.log("Godzilla screen");
+} */
+
+/* function isNumberInRange(start, end, number) {
+  return number >= start && number <= end;
+}
+console.log(isNumberInRange(10, 30, 17));
+console.log(isNumberInRange(10, 30, 5));
+ */
+
+//! expression1 || exxpression2
+/* console.log(true || false); // true
+console.log(false || true); // true
+console.log(5 || false); // 5
+console.log(false || 5); // 5
+console.log("hello" || 0); // "hello"
+console.log(0 || "hello"); // "hello" */
+
+/* console.log(5 || 3); // 5
+console.log(3 || 5); // 3
+console.log("mango" || "poly"); // "mango"
+console.log("poly" || "mango"); // "poly" */
+
+/* console.log(0 || false); // false
+console.log(false || 0); // 0
+console.log(null || ""); // ""
+console.log("" || null); // null */
+
+/* const a = 5;
+console.log(a < 10 || a > 30); // true || false -> true
+const b = 50;
+console.log(a < 10 || b > 30); // false || true -> true
+const c = 20;
+console.log(c - 20 || c * 2); // 0 || 40 -> 40 */
+
+/* const screenWidth = 700;
+const sm = 320;
+const md = 768;
+const lg = 1200;
+if (screenWidth <= sm || screenWidth > md) {
+  console.log("Mobile or Desktop screen");
+  // у консолі буде пусто, оскільки жодна з умов не перетворилась на true
+}
+ */
+
+//! !expression
+/* console.log(!true); // false
+console.log(!false); // true
+console.log(!3); // !3 -> !true -> false
+console.log(!"Mango"); // !"Mango" -> !true -> false
+console.log(!0); // !0 -> false -> true */
+
+/* const isBlocked = false;
+const canChat = !isBlocked; // !false -> true
+if (canChat) {
+  console.log("Can type in chat!");
+} else {
+  console.log("Blocked from typping in chat!");
+} */
+
+/* const isOnline = true;
+const isBlocked = false;
+const canChat = isOnline && !isBlocked;
+// true && !false -> true && true -> true
+if (canChat) {
+  console.log("can type in chat!");
+} else {
+  console.log("Blocked from typing in chat!");
+} */
+
+/* function toggleModalVisibility(isVisible) {
+  return !isVisible;
+}
+console.log(toggleModalVisibility(true));
+console.log(toggleModalVisibility(false));
+ */
+
+//!=========================================
+
+//!objectName.property
+/* const message = "JavaScript is awesome";
+console.log(message.length); // 21 */
+
+//! objectName.method()
+/* const message = "JavaScript is awesome";
+console.log(message.toUpperCase()); // "JAVE SCRIPT IS AWESOME" */
+
+//! Метод slice()
+//! srt.slice(startIndex, endIndex)
+
+/* const fullName = "Jacob Mercer";
+console.log(fullName.slice(0, 4)); // "Jaco"
+console.log(fullName.slice(3, 9)); // "ob Mer"
+console.log(fullName.slice(0, fullName.length)); // "Jacob Mercer" */
+
+/* const fullName = "Jacob Mercer";
+console.log(fullName.slice(1)); // "acob Mercer"
+console.log(fullName.slice(3)); // "ob Mercer" */
+
+/* const fullName = "Jacob Mercer";
+console.log(fullName.slice()); // "Jacob Mercer" */
+
+/* const fullName = "Jacob Mercer";
+const firstName = fullName.slice(0, 5);
+const lastName = fullName.slice(6);
+console.log(fullName); // "Jacob Mercer"
+console.log(firstName); // "Jacob"
+console.log(lastName); // "Mercer"
+ */
+
+/* function getSubstring(string, length) {
+  return length.slice();
+}
+console.log(getSubstring("Hello world", 3)); */
