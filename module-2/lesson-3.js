@@ -510,3 +510,91 @@ if (hasSpan) {
 }
 console.log(checkForName("Jason Neis", "Jason"));
 console.log(("Jason Neis", "jAsOn")); */
+
+/* //! Методи startWith() та endWith()
+//! str.startWith(substr);
+const str = "Hello world!";
+console.log(str.startsWith("Hello")); // true
+console.log(str.startsWith("hello")); // false(метод чутливий до регістру)
+//! str.endWith(substr);
+console.log(str.endsWith("world!")); // true
+console.log(str.endsWith("World!")); // false(метод чутливий до регістру)
+ */
+
+/* function checkFileExtension(fileName, ext) {
+  if (fileName.endsWith(ext) === ext.endsWith(ext)) {
+    return "File extension matches";
+  } else {
+    return "File extension does not match";
+  }
+} */
+
+/* function checkFileExtension(fileName, ext) {
+  const refer =
+    fileName.endsWith(ext) === ext.endsWith(ext)
+      ? "File extension matches"
+      : "File extension does not match";
+  return refer;
+}
+console.log(checkFileExtension("styles.css", ".css"));
+console.log(checkFileExtension("styles.css", ".js")); */
+
+//! Метод indexOf()
+//! srt.indexOf(subsrt)
+/* const message = "Welcome to Bahamas!";
+const index = message.indexOf("to");
+console.log(index); // 8
+const idax = message.indexOf("hello");
+console.log(idax); // -1 */
+
+/* function getFileName(file) {
+  const getDot = file.indexOf(".");
+  if (getDot === -1) return file;
+  return file.slice(0, getDot);
+}
+console.log(getFileName("styles.css"));
+console.log(getFileName("app"));
+ */
+
+//! Метод trim()
+//! srt.trim()
+/* const input = " JavaScript is awesome!   ";
+const trimmerInput = input.trim();
+console.log(trimmerInput); // "JavaScript is awesome!"
+console.log(input); // "JavaScript is awesome!" */
+
+/* function createFileName(name, ext) {
+  return `${name.trim()}.${ext}`;
+}
+console.log(createFileName(" order ", "txt"));
+console.log(createFileName("report ", "csv")); */
+
+//! Цикл while
+//! while(condition) {statement // код, тіло циклу}
+
+/* let count = 0;
+while (count < 10) {
+  console.log(`Count: ${count}`);
+  count += 1;
+} */
+
+/* let clientCounter = 18;
+const maxClients = 25;
+while (clientCounter < maxClients) {
+  console.log(clientCounter);
+  clientCounter += 1;
+} */
+
+function calculateTotal(number) {
+  let total = 0;
+  let current = 1;
+  while (current <= number) {
+    total += current;
+    current += 1;
+  }
+  return total;
+}
+console.log(calculateTotal(1)); // 1
+console.log(calculateTotal(3)); // 6
+console.log(calculateTotal(0)); // 0
+console.log(calculateTotal(24)); // 300
