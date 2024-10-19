@@ -456,6 +456,57 @@ console.log(lastName); // "Mercer"
  */
 
 /* function getSubstring(string, length) {
-  return length.slice();
+  string = "Hello world";
+  return string.slice(string, length)
 }
 console.log(getSubstring("Hello world", 3)); */
+
+//! Методи toUpperCase() та toLowerCase
+/* const message = "Welcome to Bahamas!";
+console.log(message.toLocaleLowerCase());
+console.log(message);
+console.log(message.toUpperCase()); */
+
+/* console.log("SaMsUng" === "samsung"); // false
+console.log("SaMsUng" === "SAMSUNG"); // false */
+
+/* const brandName = "samsung";
+const userInput = "saMsUng";
+const lowerCaseInput = userInput.toLocaleLowerCase();
+console.log(brandName); // 'samsung'
+console.log(userInput); // 'saMsUng'
+console.log(userInput === brandName); // false
+console.log(lowerCaseInput); // 'samsung'
+console.log(lowerCaseInput === brandName); // true */
+
+/* function normalizeInput(input, to) {
+  const text = to === "lower" ? input.toLowerCase() : input.toUpperCase();
+  return text;
+}
+console.log(normalizeInput("This ISN'T SpaM", "lower"));
+console.log(normalizeInput("This ISN'T SpaM", "upper"));
+ */
+
+//! метод includes()
+//! str.includes(substring)
+
+/* const username = "Jacob Mercer";
+console.log(username.includes("Jacob")); // true
+console.log(username.includes("John")); // false
+console.log(username.includes("Mercer")); // true
+console.log(username.includes("Doe")); // false
+console.log(username.includes("jacob")); // false */
+
+/* const message = "Please buy our staff!";
+const hasSpan = message.includes("buy");
+if (hasSpan) {
+  console.log("Warning: This message contain forbidden words.");
+} else {
+  console.log("You can safety open this message.");
+} */
+
+/* function checkForName(fullName, firstName) {
+  return fullName.toLowerCase().includes(firstName.toLowerCase());
+}
+console.log(checkForName("Jason Neis", "Jason"));
+console.log(("Jason Neis", "jAsOn")); */
