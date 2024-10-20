@@ -585,7 +585,7 @@ while (clientCounter < maxClients) {
   clientCounter += 1;
 } */
 
-function calculateTotal(number) {
+/* function calculateTotal(number) {
   let total = 0;
   let current = 1;
   while (current <= number) {
@@ -597,4 +597,126 @@ function calculateTotal(number) {
 console.log(calculateTotal(1)); // 1
 console.log(calculateTotal(3)); // 6
 console.log(calculateTotal(0)); // 0
-console.log(calculateTotal(24)); // 300
+console.log(calculateTotal(24)); // 300 */
+
+//! Цикл do...while
+//! do {statement // код, який буде виконуватись} while(condition);
+
+/* let count = 0;
+do {
+  console.log(`Count: ${count}`);
+  count += 1;
+} while (count < 5); */
+
+//! Цикл for
+//! for(initiazation; condition; afterthought) {statement // Тіло циклу}
+
+/* for (let i = 0; i <= 20; i += 5) {
+  console.log(i);
+} */
+
+/* for (let i = 20; i >= 0; i -= 5) {
+  console.log(i);
+} */
+
+/* function calculateTotal(number) {
+  let total = 0;
+  for (let i = 1; i <= number; i++) {
+    total += i;
+  }
+  return total;
+}
+console.log(calculateTotal(1)); // 1
+console.log(calculateTotal(7)); // 28
+console.log(calculateTotal(0)); // 0
+console.log(calculateTotal(18)); // 171
+console.log(calculateTotal(24)); // 300 */
+
+//! інкрумент та декремент
+//! ++value - це префіксний інкремент
+
+/* let x = 5;
+const y = ++x;
+console.log(x);
+console.log(y); */
+
+//! value++ - це постфіксний інкремент
+
+/* let x = 5;
+const y = x++;
+console.log(x); // 5
+console.log(y); // 6 */
+
+/* for (let i = 0; i <= 5; i++) {
+  console.log(i);
+}
+ */
+
+//! оператор break
+
+/* for (let i = 0; i < 10; i++) {
+  console.log(i);
+
+  if (i === 5) {
+    console.log("Met number 5, interrupt the execution of the cycle");
+    break;
+  }
+}
+console.log("Log after cycle"); */
+
+/* const start = 6;
+const end = 17;
+let number;
+for (let i = start; i <= end; i++) {
+  if (i % 5 === 0) {
+    number = i;
+    break;
+  }
+}
+console.log(number);
+ */
+
+//! операток break і функції
+/* function findNumberFromFive(max, target) {
+  console.log("Log in the body of the function before the cycle");
+  for (let i = 5; i <= max; i += 1) {
+    console.log("Current counter value i:", i);
+
+    if (i === target) {
+      console.log(`Found the number ${target}, interrupt the cycle`);
+      break;
+    }
+  }
+  console.log("Log in body function after cycle");
+}
+findNumberFromFive(10, 6);
+console.log("Log after exiting function"); */
+
+/* function findNumberFromFive(max, target) {
+  console.log("Log in the body of the function before the cycle");
+
+  for (let i = 5; i <= max; i += 1) {
+    console.log("Current counter value i:", i);
+    if (i === target) {
+      console.log(
+        `Found the number ${target}, we make a return, interrupting the loop and function`
+      );
+      return i;
+    }
+  }
+  // Цей console.log не виконується
+  console.log("Log in body function after cycle");
+}
+const result = findNumberFromFive(10, 6);
+console.log("Log after exiting function");
+console.log(`Result of function execution ${result}`); */
+
+/* function findNumber(start, end, divisor) {
+  for (let number = start; number <= end; number += 1) {
+    if (number % divisor === 0) {
+      return number;
+    }
+  }
+}
+console.log(findNumber(2, 6, 5)); // 5
+console.log(findNumber(16, 35, 7)); // 21 */
