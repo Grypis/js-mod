@@ -55,3 +55,72 @@ console.log(getOrderQuantity(['apple', 'banana'])); // 2 */
 /* const planets = ['Earth', 'Mars', 'Venus'];
 const lastElementIndex = planets.length - 1;
 console.log(planets[lastElementIndex]); // 'Venus' */
+
+// console.log('Hello world!');
+
+/* function getLastElementMeta(array) {
+  return [array.length - 1, array[array.length - 1]];
+}
+console.log(getLastElementMeta(['apple', 'peach', 'pear', 'banana'])); // [3, "banana"];
+console.log(getLastElementMeta(['apple', 'peach', 'pear'])); // [2, "pear"];
+ */
+
+/* function getExtremeElements(array) {
+  const firstElement = array[0];
+  const lastElement = array[array.length - 1];
+  return [firstElement, lastElement];
+}
+console.log(getExtremeElements([1, 2, 3, 4, 5]));
+console.log(getExtremeElements(['Earth', 'Mars', 'Venus'])); */
+
+/* let a = 5;
+let b = a;
+console.log(a); // 5
+console.log(b); // 5
+// Присвоєння за значенням, у пасм'яті буде створено ще
+// одну ячейку, в яку буде скопійовано значення 5
+
+// Змінемо значення а
+a = 10;
+console.log(a); // a
+console.log(b); // 5 значення b не змінилось, оскількт це окрема копія
+ */
+
+/* const a = ['Mango', 'Poly'];
+const b = a;
+console.log(a); // ['Mango', 'Poly'];
+console.log(b); // ['Mango', 'Poly'];
+a[1] = 'Jacob';
+console.log(a); // ["Mango", "Jacob"];
+console.log(b); // ["Mango", "Jacob"];
+b[0] = 'Ajax';
+console.log(a); // ["Ajax", "Jacob"]
+console.log(b); // ["Ajax", "Jacob"] */
+
+/* const arr1 = [1, 2, 3];
+const arr2 = [1, 2, 3];
+console.log(arr1 === arr2); // false
+console.log([] === []); // false */
+
+/* const array = [1, true, 'Poly'];
+console.log(String(array)); // '1, true, Poly'
+console.log(array + '5'); // '1, true, Poly5' */
+
+/* console.log(Number([])); // 0
+console.log(Number([1])); // 1
+console.log(Number([1, 2, 3])); // NaN */
+
+/* const emptyArray = [];
+const nonEmptyArray = [1, 2, 3];
+console.log(Boolean(emptyArray)); // true
+console.log(Boolean(nonEmptyArray)); // true
+if (emptyArray) {
+  console.log('if is in progress');
+} else {
+  console.log('else is not performed');
+}
+if (nonEmptyArray) {
+  console.log('if is in progress');
+} else {
+  console.log('else is not performed');
+} */
