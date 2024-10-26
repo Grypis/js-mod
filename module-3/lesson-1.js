@@ -124,3 +124,112 @@ if (nonEmptyArray) {
 } else {
   console.log('else is not performed');
 } */
+
+/* const words = ['JavaScript', 'is', 'amazing'];
+console.log(words.join('')); // 'JavaScriptisamazing'
+console.log(words.join(' ')); // 'JavaScript is amazing'
+console.log(words.join('-')); // 'JavaScript-is'amazing' */
+
+/* function transformString(string) {
+  const words = string.split('_');
+  return words.join('-');
+}
+console.log(transformString('price_per_droid'));
+console.log(transformString('user_age')); */
+
+/* function getLength(array) {
+  return array.join('').length;
+}
+
+console.log(getLength(['Mango', 'hurries', 'to', 'the', 'train'])); // 22
+console.log(getLength(['M', 'a', 'n', 'g', 'o'])); // 8 */
+
+/* const name = 'Mango';
+const letters = name.split('');
+console.log(letters); // ["M", "a", "n", "g", "o"]
+
+const message = 'JavaScript essential';
+const words = message.split(' ');
+console.log(words); // ["JavaScript", "essentials"]
+
+const slug = 'amazing-french-recipes';
+const slugParts = slug.split('-');
+console.log(slugParts); // ["amazing", "french", "recipes"]
+ */
+
+/* function calculateEngravingPrice(message, pricePerWord) {
+  return message.split(' ').length * pricePerWord;
+}
+console.log(calculateEngravingPrice('JavaScript is in my blood', 10)); // 50
+console.log(calculateEngravingPrice('JavaScript is in my blood', 20)); // 100 */
+
+/* const planets = ['Earth', 'Mars', 'Jupiter', 'Saturn'];
+console.log(planets.slice(0, 2)); // ['Earth', 'Mars']
+console.log(planets.slice(0, 4)); // ['Earth', 'Mars', 'Jupiter', 'Saturn']
+console.log(planets.slice(1, 3)); // ['Mars', 'Venus']
+const result = planets.slice(1, 3);
+console.log(result); // ["Mars", "Venus"]
+console.log(planets.slice()); // ["Earth", "Mars", "Venus", "Jupiter", "Saturn"]
+console.log(planets.slice(1)); // ["Mars", "Venus", "Jupiter", "Saturn"]
+console.log(planets.slice(2)); // ["Venus", "Jupiter", "Saturn"]
+console.log(planets.slice(-2)); // ["Jupiter", "Saturn"] */
+
+/* const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+const firstTwoEls = fruits.slice(0, 2);
+console.log(firstTwoEls);
+const nonExtremeEls = fruits.slice(1, 4);
+console.log(nonExtremeEls);
+const lastThreeEls = fruits.slice(-3);
+console.log(lastThreeEls);
+ */
+
+/* const firstArray = ['Mercury', 'Venus'];
+const secondArray = ['Mars', 'Jupiter'];
+const thirdArray = ['Saturn', 'Neptune'];
+const result = firstArray.concat(secondArray);
+console.log(firstArray); // ["Mercury", "Venus"];
+console.log(secondArray); // ["Mars", "Jupiter"];
+console.log(result); // ["Mercury", "Venus", "Mars", "Jupiter"];
+console.log(firstArray.concat(thirdArray, secondArray));
+// ['Mercury', 'Venus', 'Saturn', 'Neptune', 'Mars', 'Jupiter', ]; */
+
+/* const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+const newClients = ['Peach', 'Houston'];
+const allClients = oldClients.concat(newClients);
+console.log(allClients); */
+
+/* const clients = ['Mango', 'Ajax', 'Poly', 'Kiwi', 'Poly'];
+console.log(clients.indexOf('Poly')); // 2
+console.log(clients.indexOf('Mongong')); // -1 */
+
+/* function getSlice(array, value) {
+  let index = array.indexOf(value);
+  if (index === -1) {
+    return [];
+  } else {
+    return array.slice(0, index + 1);
+  }
+}
+console.log(getSlice(['Mango', 'Poly', 'Ajax'], 'Poly')); // ["Mango", "Poly"]
+console.log(getSlice(['Mango', 'Poly', 'Ajax'], 'Ajax')); // ["Mango", "Poly", "Ajax"]
+ */
+
+/* const planets = ['Earth', 'Mars', 'Venus'];
+planets.push('Jupiter');
+console.log(planets); // ['Earth', 'Mars', 'Venus', 'Jupiter'] */
+
+/* const tags = [];
+for (let i = 0; i < 3; i++) {
+  tags.push(`tag-${i}`);
+}
+console.log(tags); // ["tag-0", "tag-1", "tag-2"] */
+
+/* function createArrayOfNumbers(min, max) {
+  let array = [];
+  for (let i = min; i <= max; i++) {
+    array.push(i);
+  }
+  return array;
+}
+console.log(createArrayOfNumbers(1, 3)); // [1, 2, 3]
+console.log(createArrayOfNumbers(14, 17)); // [14, 15, 16, 17] */
