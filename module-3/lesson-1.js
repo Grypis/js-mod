@@ -233,3 +233,141 @@ console.log(tags); // ["tag-0", "tag-1", "tag-2"] */
 }
 console.log(createArrayOfNumbers(1, 3)); // [1, 2, 3]
 console.log(createArrayOfNumbers(14, 17)); // [14, 15, 16, 17] */
+
+/* const planets = ['Earth', 'Mars', 'Venus'];
+for (let i = 0; i < planets.length; i++) {
+  console.log(planets[i]);
+} */
+
+/* function calculateTotalPrice(order) {
+  let total = 0;
+  for (let i = 0; i < order.length; i++) {
+    total += order[i];
+  }
+  return total;
+}
+console.log(calculateTotalPrice([12, 85, 37, 4])); //138
+ */
+
+/* const planets = ['Earth', 'Mars', 'Venus'];
+console.log(planets.includes('Earth')); // true
+console.log(planets.includes('Saturn')); // false */
+
+/* const fruits = ['apple', 'banana', 'orange'];
+if (fruits.includes('banana')) {
+  console.log('has banana');
+} else {
+  console.log('does not has banana');
+} */
+
+/* function checkStorage(storage, item) {
+  const lowerCaseStorage = storage.map(i => i.toLowerCase());
+  const index = lowerCaseStorage.indexOf(item.toLowerCase());
+  if (index !== -1) {
+    return `${storage[index]} is available to order!`;
+  } else {
+    return 'Sorry! We are out of stock!';
+  }
+}
+checkStorage(['apple', 'plum', 'pear'], 'plum'); // "plum is available to order!" */
+
+/* function getCommonElements(array1, array2) {
+  const commonElements = [];
+  for (let element of array1) {
+    if (array2.includes(element)) {
+      commonElements.push(element);
+    }
+  }
+  return commonElements;
+}
+console.log(getCommonElements([1, 2, 3], [2, 4])); // 2
+ */
+
+/* const planets = ['Earth', 'Mars', 'Venus'];
+for (const planet of planets) {
+  console.log(planet);
+} */
+
+/* function calculateTotalPrice(order) {
+  let total = 0;
+  for (const item of order) {
+    total += item;
+  }
+  return total;
+}
+console.log(calculateTotalPrice([12, 85, 37, 4])); // 138 */
+
+/* function sum(a, b) {
+  console.log(arguments);
+  return a + b;
+}
+sum(2, 5); */
+
+/* function multiply() {
+  let total = 1;
+  for (const arg of arguments) {
+    total *= arg;
+  }
+  return total;
+}
+console.log(multiply(1, 2, 3)); //  6
+console.log(multiply(1, 2, 3, 4)); //  24
+console.log(multiply(1, 2, 3, 4, 5)); //  120 */
+
+/* function foo() {
+  // У змінній args буде повноцінний масив з усіх аршументів
+  const args = Array.from(arguments);
+  return args.join('-');
+}
+console.log(foo(1, 2, 3)); // Поверне "1-2-3" */
+
+/* function greet(username = 'Guest') {
+  return `Hello, ${username}`;
+}
+console.log(greet('Jacob')); // "Hello, Jacob!"
+console.log(greet()); // 'Hello, Guest!' */
+
+/* function count(from, to, step = 1) {
+  console.log(`from: ${from}, to: ${to}, step: ${step} `);
+
+  for (let i = from; i <= to; i += step) {
+    //
+  }
+}
+console.log(count(1, 15, 4)); // "from: 1, to: 15, step: 4"; */
+
+/* const multiply = function (x, y, z) {
+  console.log(x * y * z);
+};
+multiply(4, 5, 6);
+ */
+
+/* const globalValue = 10;
+console.log(globalValue); // 10
+function foo() {
+  console.log(globalValue); // 10
+}
+for (let i = 0; i < 5; i++) {
+  console.log(globalValue); // 10
+
+  if (i === 2) {
+    console.log(globalValue); // 10
+  }
+} */
+
+/* function fnA() {
+  console.log('Log inside fnA function before calling fnB');
+  fnB();
+  console.log('Log inside fnA function after fnB call');
+}
+function fnB() {
+  console.log('Log inside fnB function');
+}
+console.log('Log before calling fnA');
+fnA();
+console.log('Log after calling fnA');
+// "Log before calling fnA"
+// "Log inside fnA function before calling fnB"
+// "Log inside fnB function"
+// "Log inside fnA function after fnB call"
+// "Log after calling fnA" */
