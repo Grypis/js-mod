@@ -276,7 +276,7 @@ console.log(credentials); */
   // інструкції
 } */
 
-const book = {
+/* const book = {
   title: 'The Last Kingdom',
   author: 'Bernard Cornwell',
   gebres: ['historical prose', 'adventure'],
@@ -285,4 +285,69 @@ const book = {
 for (const key in book) {
   console.log(key); // ключ
   console.log(book[key]); // Значення властивості з таким ключем
+} */
+
+/* const apartment = {
+  descr: 'Spacious apartment in the city center',
+  rating: 4,
+  price: 2153,
+};
+const keys = [];
+const values = [];
+for (let key in apartment) {
+  keys.push(key);
+  values.push(apartment[key]);
 }
+console.log(keys);
+console.log(values); */
+
+/* const book = {
+  title: 'The Last Kingdom',
+  author: 'Bernard Cornwell',
+  genres: ['historical prose', 'adventure'],
+  rating: 8.38,
+};
+const keys = Object.keys(book);
+console.log(keys); // ['title', 'author', 'genres', 'rating']
+for (const key of keys) {
+  console.log(key); // Ключ
+  console.log(book[key]); // Значення властивості
+} */
+
+/* const apartment = {
+  descr: 'Spacious apartment in the city center',
+  rating: 4,
+  price: 2153,
+};
+const values = [];
+const keys = Object.keys(apartment);
+console.log(keys);
+for (const key of keys) {
+  values.push(apartment[key]);
+}
+console.log(values); */
+
+/* function countProps(object) {
+  const keys = Object.keys(object);
+  return keys.length;
+}
+console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); */
+
+/* const book = {
+  title: 'The Last Kingdom',
+  author: 'Bernard Cornwell',
+  rating: 8.38,
+};
+const keys = Object.keys(book);
+console.log(keys); // ["title", "author", "rating"]
+const values = Object.values(book);
+console.log(values); // ["The Last Kingdom", "Bernard Cornwell", 8.38] */
+
+const apartment = {
+  descr: 'Spacious apartment in the city center',
+  rating: 4,
+  price: 2153,
+};
+
+console.log(keys);
+console.log(values);
