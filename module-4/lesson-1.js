@@ -343,11 +343,405 @@ console.log(keys); // ["title", "author", "rating"]
 const values = Object.values(book);
 console.log(values); // ["The Last Kingdom", "Bernard Cornwell", 8.38] */
 
-const apartment = {
+/* const apartment = {
   descr: 'Spacious apartment in the city center',
   rating: 4,
   price: 2153,
 };
-
+const keys = Object.keys(apartment);
 console.log(keys);
-console.log(values);
+const values = Object.values(apartment);
+console.log(apartment);
+ */
+
+/* function countTotalSalary(salaries) {
+  let totalSalary = 0;
+  const salaryValues = Object.values(salaries);
+  for (const salary of salaryValues) {
+    totalSalary += salary;
+  }
+  return totalSalary;
+}
+console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 })); // 330 */
+
+/* const books = [
+  {
+    title: 'The Last Kingdom',
+    author: 'Bernard Cornwell',
+    rating: 8.38,
+  },
+  {
+    title: 'Beside Still Waters',
+    author: 'Robert Shekley',
+    rating: 8.51,
+  },
+  {
+    title: 'The Dream of a Ridiculous Man',
+    author: 'Fyodor Dostoevsky',
+    rating: 7.75,
+  },
+];
+for (const book of books) {
+  console.log(book); // об'єкт книги
+  console.log(book.title); // Назва
+  console.log(book.author); // Автор
+  console.log(book.rating); // Рейтинг
+} */
+
+/* const colors = [
+  { hex: '#f44336', rgb: '244,67,54' },
+  { hex: '#2196f3', rgb: '33,150,243' },
+  { hex: '#4caf50', rgb: '76,175,80' },
+  { hex: '#ffeb3b', rgb: '255,235,59' },
+];
+const hexColors = [];
+const rgbColors = [];
+for (const color of colors) {
+  hexColors.push(color.hex);
+  rgbColors.push(color.rgb);
+}
+console.log(hexColors); // ['#f44336', '#2196f3', '#4caf50', '#ffeb3b']
+console.log(rgbColors); // ['244,67,54', '33,150,243', '76,175,80', '255,235,59'] */
+
+/* const apartment = {
+  descr: 'Spacious apartment in the city center',
+  rating: 4,
+  price: 2153,
+};
+const keys = [];
+const values = [];
+for (let key in apartment) {
+  keys.push(key);
+  values.push(apartment[key]);
+}
+console.log(keys);
+console.log(values); */
+
+/* const books = [
+  {
+    title: 'The Last Kingdom',
+    author: 'Bernard Cornwell',
+  },
+  {
+    title: 'Beside Still Waters',
+    author: 'Robert Sheckley',
+  },
+  {
+    title: 'The Dream of a Ridiculuos Man',
+    author: 'Fyodor Dostoevsky',
+  },
+];
+const authorToSearchFor = 'Robert Shevcley';
+for (const book of books) {
+  if (book.author === authorToSearchFor) {
+    console.log(book);
+    console.log(book.title);
+    console.log(book.rating);
+  }
+} */
+
+/* function getProductPrice(productName) {
+  const products = [
+    { name: 'Radar', price: 1300, quantity: 4 },
+    { name: 'Scanner', price: 2700, quantity: 3 },
+    { name: 'Droid', price: 400, quantity: 7 },
+    { name: 'Grip', price: 1200, quantity: 9 },
+  ];
+  for (const product of products) {
+    if (productName === product.name) {
+      return product.price;
+    }
+  }
+  return null;
+}
+console.log(getProductPrice('Radar')); // 1300
+console.log(getProductPrice('Engine')); */
+
+/* const books = [
+  {
+    title: 'The Last Kingdom',
+    author: 'Bernard Cornwell',
+    rating: 8.2,
+  },
+  {
+    title: 'Beside Still Waters',
+    author: 'Robert Sheckley',
+    rating: 9,
+  },
+  {
+    title: 'The Dream of a Ridiculous Man',
+    author: 'Fyodor Dostoevsky',
+    rating: 6.8,
+  },
+];
+const titles = [];
+for (const book of books) {
+  titles.push(book.title);
+}
+console.log(titles); // ["The Last Kingdom", "Beside Still Waters", "The Dream of a Ridiculous Man"] */
+
+/* const books = [
+  { title: 'The Last Kingdom', author: 'Bernard Cornwell', rating: 8.2 },
+  { title: 'Beside Still Waters', author: 'Robert Sheckley', rating: 9 },
+  {
+    title: 'The Dream of a Ridiculous Man',
+    author: 'Fyodor Dostoevsky',
+    rating: 6.8,
+  },
+];
+let totalRating = 0;
+for (const book of books) {
+  totalRating += book.rating;
+}
+console.log(totalRating);
+const avarageRaring = totalRating / books.length;
+console.log(avarageRaring); // 8 */
+
+/* function getAllPropValues(propName) {
+  const products = [
+    { name: 'Radar', price: 1300, quantity: 4 },
+    { name: 'Scanner', price: 2700, quantity: 3 },
+    { name: 'Droid', price: 400, quantity: 7 },
+    { name: 'Grip', price: 1200, quantity: 9 },
+  ];
+  const values = [];
+  for (const product of products) {
+    if (product[propName] !== undefined) {
+      values.push(product[propName]);
+    }
+  }
+  return values;
+}
+console.log(getAllPropValues('price')); // [1300, 2700, 400, 1200]
+console.log(getAllPropValues('name')); // ["Radar", "Scanner", "Droid", "Grip"] */
+
+/* function calculateTotalPrice(productName) {
+  const products = [
+    { name: 'Radar', price: 1300, quantity: 4 },
+    { name: 'Scanner', price: 2700, quantity: 3 },
+    { name: 'Droid', price: 400, quantity: 7 },
+    { name: 'Grip', price: 1200, quantity: 9 },
+  ];
+  for (let product of products) {
+    if (product.name === productName) {
+      return product.price * product.quantity;
+    }
+    return `Product ${productName} not found!`;
+  }
+}
+console.log(calculateTotalPrice('Radar')); // 5200 */
+
+/* const books = ['The Lat Kingdom', 'Dream Guardian'];
+function getBooks() { }
+function addBook() { } */
+
+/* const obj = {
+  method(value) {
+    console.log(`I'm a method with ${value}!`);
+  },
+};
+obj.method(5); // "I'm a method with 5!"
+obj.method(10); // "I'm a method with 10!" */
+
+/* const bookShelf = {
+  books: ['The last Kingdom', 'Dream Guardian'],
+  getBooks() {
+    return 'Returning all books';
+  },
+  addBook(bookName) {
+    return `Adding book - ${bookName}`;
+  },
+};
+console.log(bookShelf.getBooks()); // поверне "Returning all books"
+console.log(bookShelf.addBook('New book 1')); // поверне "Adding book New book 1"
+console.log(bookShelf.addBook('New book 2')); // поверне "Adding book New book 2" */
+
+/* const atTheOldToad = {
+  potions: [],
+  getPotions() {
+    return 'List of all available potions';
+  },
+  addPotion(potionName) {
+    return `Adding ${potionName}`;
+  },
+};
+console.log(atTheOldToad.addPotion('Invisibility')); */
+
+/* const bookShelf = {
+  books: ['The Last Kingdom', 'The Mist'],
+  getBook() {
+    console.log(this);
+  },
+};
+console.log(bookShelf.getBook()); // {books: ["The Last Kingdom", "The Mist"], getBooks: f} */
+
+/* const bookShelf = {
+  books: ['The Last Kingdom', 'The Mist'],
+  getBook() {
+    return this.books;
+  },
+};
+console.log(bookShelf.getBook()); // ["The Last Kingdom", "The Mist"] */
+
+/* const atTheOldToad = {
+  potions: ['Speed potion', 'Stone skin'],
+  getPotions() {
+    return this.potions;
+  },
+};
+console.log(atTheOldToad.getPotions()); */
+
+/* const bookShelf = {
+  books: ['The Last Kingdom'],
+};
+bookShelf.books.push('The Mist');
+console.log(bookShelf.books); // ["The Last Kingdom", "The Mist"] */
+
+/* const bookShelf = {
+  books: ['The Last Kingdom'],
+  getBooks() {
+    return this.books;
+  },
+  addBook(bookName) {
+    this.books.push(bookName);
+  },
+};
+console.log(bookShelf.getBooks()); // ["The Last Kingdom"]
+bookShelf.addBook('The Mist');
+bookShelf.addBook('Dream Guardian');
+console.log(bookShelf.getBooks()); // ["The Last Kingdom", "The Mist", "Dream Guardian"] */
+
+/* const atTheOldToad = {
+  potions: ['Speed potion', 'Stone skin'],
+  getPotions() {
+    return this.potions;
+  },
+  addPotion(potionName) {
+    this.potions.push(potionName);
+  },
+};
+console.log(atTheOldToad.addPotion('Invisibility')); // ["Speed potion", "Stone skin", "Invisibility"] */
+
+/* const bookShelf = {
+  books: [
+    {
+      title: 'The Last kingdom',
+      rating: 8,
+    },
+    {
+      title: 'The mist',
+      rating: 6,
+    },
+  ],
+  getBook() {
+    return this.books;
+  },
+  addBook(newBook) {
+    this.books.push(newBook);
+  },
+};
+bookShelf.addBook({ title: 'Dream Guardian', rating: 9 }); */
+
+/* const bookShelf = {
+  books: [
+    {
+      title: 'The Last kingdom',
+      rating: 8,
+    },
+    {
+      title: 'The mist',
+      rating: 6,
+    },
+  ],
+  getAvarageRating() {
+    let totalRating = 0;
+    for (const book of this.books) {
+      totalRating += book.rating;
+    }
+    return totalRating / this.books.length;
+  },
+};
+console.log(bookShelf.getAvarageRating()); // 7 */
+
+/* const atTheOldToad = {
+  potions: [
+    { name: 'Speed potion', price: 460 },
+    { name: 'Stone skin', price: 520 },
+  ],
+  getPotions() {
+    return this.potions;
+  },
+  addPotion(newPotion) {
+    this.potions.push(newPotion);
+  },
+  getTotalPrice() {
+    let totalPrice = 0;
+    for (const potion of this.potions) {
+      totalPrice += potion.price;
+    }
+    return totalPrice;
+  },
+};
+console.log(atTheOldToad.addPotion({ name: 'Invisibility', price: 620 })); */
+
+/* const bookShelf = {
+  books: [
+    { title: 'The Last Kingdom', rating: 8 },
+    { title: 'The Mist', rating: 6 },
+  ],
+  changeRating(bookName, newRating) {
+    for (const book of this.books) {
+      if (book.title === bookName) {
+        book.rating = newRating;
+      }
+    }
+  },
+};
+bookShelf.changeRating('The Mist', 9);
+bookShelf.changeRating('The Last Kingdom', 4); */
+
+/* function multiply(a, b) {
+  console.log(a, b);
+}
+multiply(1, 2); // 1 2
+multiply(1, 2, 3); // 1 2
+multiply(1, 2, 3, 4); // 1 2 */
+
+/* function multiply(a, b) {
+  console.log(arguments);
+}
+multiply(1, 2); // псевдомасив [1, 2]
+multiply(1, 2, 3); // псевдомасив [1, 2, 3]
+multiply(1, 2, 3, 4); // псевдомасив [1, 2, 3, 4] */
+
+/* function multiply(...args) {
+  console.log(args);
+}
+multiply(1, 2); // [1, 2]
+multiply(1, 2, 3); // [1, 2, 3]
+multiply(1, 2, 3, 4); // [1, 2, 3, 4] */
+
+/* function add(...args) {
+  return args.reduce(function (sum, current) {
+    return sum + current;
+  }, 0);
+}
+console.log(add(15, 27)); // 42 */
+
+/* function multiply(first, second, ...args) {
+  console.log(first, second, args);
+}
+multiply(1, 2); // 1 2
+multiply(1, 2, 3); // 1 2 [3]
+multiply(1, 2, 3, 4); // 1 2 [3, 4] */
+
+/* function addOverNum(value, ...args) {
+  let sum = 0;
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] > value) {
+      sum += args[i];
+    }
+  }
+  return sum;
+}
+console.log(addOverNum(10, 12, 4, 11, 48, 10, 8)); // 71 */
