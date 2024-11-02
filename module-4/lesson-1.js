@@ -745,3 +745,48 @@ multiply(1, 2, 3, 4); // 1 2 [3, 4] */
   return sum;
 }
 console.log(addOverNum(10, 12, 4, 11, 48, 10, 8)); // 71 */
+
+/* const num = Math.max(14, -34, 3, 75, 11);
+console.log(num); // 75 */
+
+/* const temps = [14, -34, 3, 75, 11];
+console.log(...temps); // 14 -34 3 75 11
+console.log(Math.max(...temps)); // 75 */
+
+/* function getExtremeScores(scores) {
+  return {
+    best: Math.max(...scores),
+    worth: Math.min(...scores),
+  };
+}
+console.log(getExtremeScores([89, 64, 42, 17, 93, 51, 26])); // { best: 93, worst: 17 } */
+
+/* const temps = [14, -4, 25, 8, 11];
+const copyOfTemps = [...temps];
+console.log(copyOfTemps); // [14, -4, 25, 8, 11] */
+
+/* const lastWeekTemps = [14, 25, 11];
+const currentWeekTemps = [23, 17, 18];
+const allTemps = [...lastWeekTemps, ...currentWeekTemps];
+console.log(allTemps); // [14, 25, 11, 23, 17, 18] */
+
+/* const fisrt = { propsA: 5, propB: 10 };
+const second = { propsC: 15 };
+const third = { ...fisrt, ...second };
+console.log(third); // { propA: 5, propB: 10, propC: 15 } */
+
+/* const first = { propA: 5, propB: 10, propC: 50 };
+const second = { propC: 15, propD: 20 };
+const third = { ...first, ...second };
+console.log(third); //  { propA: 5, propB: 10, propC: 15, propD: 20 }
+const fourth = { ...second, ...first };
+console.log(fourth); // { propA: 5, propB: 10, propC: 50, propD: 20 } */
+
+const first = { propA: 5, propB: 10, propC: 50 };
+const second = { propC: 15 };
+const third = { propB: 20, ...first, ...second };
+console.log(third); // {propB: 10, propA: 5, propC: 15}
+const fourth = { ...first, ...second, propB: 20 };
+console.log(fourth); // {propA: 5, propB: 20, propC: 15}
+const fifth = { ...first, propB: 20, ...second };
+console.log(fifth); // {propA: 5, propB: 20, propC: 15}
