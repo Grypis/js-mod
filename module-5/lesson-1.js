@@ -387,3 +387,21 @@ const getUserEmails = users => {
   return users.map(user => user.email);
 };
 console.log(getUserEmails(users)); */
+
+/* array.filter((elem, idx, arr) => { }); */
+
+/* const values = [51, -3, 27, 21, 68, 42, -37];
+const positiveValue = values.filter(value => value >= 0);
+console.log(positiveValue);
+const negativeValues = values.filter(value => value < 0);
+console.log(negativeValues);
+const bigValues = values.filter(value => value > 1000);
+console.log(bigValues);
+console.log(values); */
+
+/* const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+
+const evenNumbers = numbers.filter(number => number % 2 === 0);
+const oddNumbers = numbers.filter(number => number % 2 !== 0);
+console.log(evenNumbers);
+console.log(oddNumbers); */
