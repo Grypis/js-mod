@@ -15,7 +15,7 @@ user.showName(); */
 };
 user.showName(); */
 
-const pizzaPalace = {
+/* const pizzaPalace = {
   pizzas: ['Smoked', 'Four meats'],
 
   checkPizza(pizzaName) {
@@ -30,4 +30,30 @@ const pizzaPalace = {
     }
   },
 };
-console.log(pizzaPalace.order('Smoked')); //"Order accepted, preparing «Smoked» pizza"
+console.log(pizzaPalace.order('Smoked')); //"Order accepted, preparing «Smoked» pizza" */
+
+/* function foo() {
+  console.log(this);
+}
+foo(); // window
+ */
+
+/* const user = {
+  username: 'Poly',
+  showThis() {
+    console.log(this);
+  },
+};
+user.showThis(); // {username: 'Poly', showThis: f} */
+
+'use strict';
+
+function showThis() {
+  console.log('this in showThis: ', this);
+}
+const user = {
+  username: 'Poly',
+};
+user.showContext = showThis;
+user.showContext();
+showThis();
