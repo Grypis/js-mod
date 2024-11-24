@@ -885,8 +885,8 @@ console.log(names); */
   .map(student => student.name);
 console.log(names); */
 
-const uniqueSortedCourses = students
+/* const uniqueSortedCourses = students
   .flatMap(student => student.courses)
   .filter((courses, index, array) => array.indexOf(courses) === index)
   .toSorted((a, b) => a.localeCompare(b));
-console.log(uniqueSortedCourses);
+console.log(uniqueSortedCourses); */
