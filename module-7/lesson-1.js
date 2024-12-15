@@ -101,3 +101,38 @@ console.log(heading); */
 text.remove(); */
 
 //? element.insertAdjacentHTML(position, string)
+
+//? element.addEventLintener(event, handler, options)
+const button = document.querySelector('.my-button');
+/* button.addEventListener('click', () => {
+  console.log('The button was pressed and now next image will appear');
+}); */
+
+/* const handleClick = () => {
+  console.log('The button was pressed and now next image will appear');
+};
+button.addEventListener('click', handleClick); */
+
+//? element.removeEventListener(event, handler, options)
+
+/* const handleClick = event => {
+  console.log(event);
+};
+button.addEventListener('click', handleClick); */
+
+/* document.addEventListener('keydown', event => {
+  console.log('Keydown', event);
+});
+document.addEventListener('keyup', event => {
+  console.log('Keyup', event);
+}); */
+
+/* document.addEventListener('keydown', event => {
+  console.log('key: ', event.key);
+  console.log('key: ', event.code);
+}); */
+
+/* const form = document.querySelector('form');
+form.addEventListener('submit', event => {
+  event.preventDefault();
+}); */
