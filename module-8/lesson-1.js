@@ -263,4 +263,39 @@ console.log(`rgb(${red}, ${green}, ${blue})`); */
 /* const color = [200, 100, 255];
 const [red, green, blue, alfa = 0.3] = color;
 
-console.log(`rgba(${red}, ${green}, ${blue}, ${alfa})`); // “rgba(200, 255, 100, 0.3)" */
+console.log(`rgba(${red}, ${green}, ${blue}, ${alfa})`); // "rgba(200, 255, 100, 0.3)" */
+
+//! ====================================================
+/* const color = [200, 255, 100];
+const [red, ...otherColors] = color;
+console.log(red);
+console.log(otherColors); */
+
+//! ====================================================
+/* const user = {
+  name: 'Jacob',
+  age: 32,
+  email: 'aadsa@asd.asd',
+  isOnline: true,
+};
+
+const { name, isOnline, ...otherProps } = user;
+console.log(name);
+console.log(otherProps); */
+
+//! ====================================================
+/* const rgb = [200, 100, 255];
+const [, , blue] = rgb;
+console.log(`Blue: ${blue}`); */
+
+//! ====================================================
+/* function printFruits(fruits) {
+  console.log(fruits[0], fruits[1], fruits[2]);
+}
+
+printFruits(['apple', 'banana', 'orange']); */
+
+/* function printFruits([firstFruit, secondFruit, thirdFruit]) {
+  console.log(firstFruit, secondFruit, thirdFruit);
+}
+printFruits(['apple', 'banana', 'orange']); */
