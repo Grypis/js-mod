@@ -1,12 +1,12 @@
-const box = document.querySelector('.box');
+/* const box = document.querySelector('.box');
 
 box.addEventListener('click', function (e) {
   console.log(e.target); // Елемент, на якому відбулась подія click
-});
+}); */
 
 //! ====================================================
 
-const colorPalette = document.querySelector('.color-palette');
+/* const colorPalette = document.querySelector('.color-palette');
 const output = document.querySelector('.output');
 
 colorPalette.addEventListener('click', selectColor);
@@ -48,4 +48,19 @@ function getRandomHexColor() {
   }
 
   return color;
-}
+} */
+
+//! ====================================================
+/* console.log(_.sum([4, 2, 8, 6]));
+console.log(_.shuffle([1, 2, 3, 4]));
+ */
+
+/* const instance = basicLightbox.create(
+  `
+	<h1>Not closable</h1>
+	<p>It's not possible to close this lightbox with a click.</p>
+`,
+  {
+    closable: false,
+  },
+); */
