@@ -203,3 +203,64 @@ for (const { title, author, rating } of books) {
 /* function printUserInfo({ name, age, hobby }) {
   console.log(`Name: ${name}, Age: ${age}, Hobby: ${hobby}`);
 } */
+
+//! ====================================================
+/* function doStuffWithBook(title, pages, downloads, rating, isPublic) {
+  console.log(title);
+} */
+
+// function doStuffWithBook(book) {
+//   console.log(book.title);
+// }
+
+/* doStuffWithBook({
+  title: 'The last Kingdom',
+  pages: 736,
+  downloads: 10283,
+  rating: 8.38,
+  isPublic: true,
+}); */
+
+/* function doStuffWithBook(book) {
+  const { title, pages, downloads, rating, isPublic } = book;
+  console.log(title);
+  console.log(pages);
+} */
+
+/* function doStuffWithBook({ title, pages, downloads, rating, isPublic }) {
+  console.log(title);
+  console.log(pages);
+} */
+
+//! ====================================================
+/* const user = {
+  name: 'Jacques Gluke',
+  tag: 'jgluke',
+  stats: {
+    followers: 5603,
+    views: 4827,
+    likes: 1308,
+  },
+};
+
+const {
+  name,
+  tag,
+  stats: { followers = 0, views: userViews = 0, likes: userLikes = 0 },
+} = user;
+console.log(name);
+console.log(tag);
+// console.log(stats); // помилка
+console.log(followers);
+console.log(userViews); */
+
+//! ====================================================
+/* const color = [200, 255, 100];
+const [red, green, blue] = color;
+console.log(`rgb(${red}, ${green}, ${blue})`); */
+
+//! ====================================================
+/* const color = [200, 100, 255];
+const [red, green, blue, alfa = 0.3] = color;
+
+console.log(`rgba(${red}, ${green}, ${blue}, ${alfa})`); // “rgba(200, 255, 100, 0.3)" */
