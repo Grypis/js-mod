@@ -65,3 +65,19 @@ console.log('Fine'); */
 //! ============================================
 /* console.log('not');
 cos value = 5; */
+
+//! ============================================
+// console.log(localStorage);
+
+/* localStorage.setItem('ui-theme', 'light');
+console.log(localStorage);
+ */
+
+//! ============================================
+const setting = {
+  theme: 'dark',
+  isAuthenticated: true,
+  options: [1, 2, 3],
+};
+
+localStorage.setItem('settings', JSON.stringify(setting));
