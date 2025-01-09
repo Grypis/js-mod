@@ -139,3 +139,22 @@ console.log(sessionStorage);
 
 sessionStorage.clear();
 console.log(sessionStorage); */
+
+//! ============================================
+/* const form = document.querySelector('.feedback-form');
+const textarea = form.elements.message;
+const localStorageKey = 'example-message';
+
+textarea.value = localStorage.getItem(localStorage) ?? '';
+
+form.addEventListener('input', evt => {
+  localStorage.setItem(localStorageKey, evt.target.value);
+});
+
+form.addEventListener('submit', evt => {
+  evt.preventDefault();
+  console.log(evt.target.elements.message.value);
+  form.reset();
+}); */
+
+//! ============================================
