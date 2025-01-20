@@ -66,10 +66,13 @@ const elapsedTime = endTime - startTime;
 console.log(`Elapsed time: ${elapsedTime} ms`); */
 
 //! ====================================
-const data = new Date('March 26, 2030');
+/* const data = new Date('March 26, 2030');
 console.log('Date: ', data);
 
 console.log('Day: ', data.getDate());
 
 data.setMinutes(50);
-console.log(data);
+console.log(data); */
+
+//! ====================================
+//* const promise = new Promise((resolve, reject) => {});
