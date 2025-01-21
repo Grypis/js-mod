@@ -76,3 +76,121 @@ console.log(data); */
 
 //! ====================================
 //* const promise = new Promise((resolve, reject) => {});
+
+/* const isSuccess = true;
+
+// Create promise
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (isSuccess) {
+      resolve('Success! Value passed to resolve function');
+    } else {
+      reject('Error! Error passed to reject function');
+    }
+  }, 2000);
+});
+
+// Registering promise callbacks
+promise
+  .then(value => {
+    console.log(value); // "Success! Value passed to resolve function"
+  })
+  .catch(error => {
+    console.log(error); // "Error! Error passed to reject function"
+  }); */
+
+//! ====================================
+/* promise
+  .then(value => {})
+  .catch(error => {})
+  .finally(() => {}); */
+
+//! ====================================
+/* const isSuccess = true;
+
+//Create promise
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (isSuccess) {
+      resolve('Seccess!');
+    } else {
+      reject('Error!');
+    }
+  }, 2000);
+});
+
+//Registering promise callbacks
+promise
+  .then(value => console.log(value))
+  .catch(error => console.log(error))
+  .finally(() => console.log('Promise setteled')); */
+
+//! ====================================
+/* const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve(5);
+  }, 2000);
+});
+
+promise
+  .then(value => {
+    console.log(value); // 5
+    return value * 2;
+  })
+  .then(value => {
+    console.log(value); // 10
+    return value * 3;
+  })
+  .then(value => {
+    console.log(value); // 30
+  })
+  .catch(error => {
+    console.log(error);
+  })
+  .finally(() => {
+    console.log('finally');
+  }); */
+
+//! ====================================
+/* const fetchUserFromServer = (username, onSeccess, onError) => {
+  console.log(`Fetching data for ${username}`);
+
+  setTimeout(() => {
+    const isSuccess = true;
+
+    if (isSuccess) {
+      onSeccess('success value');
+    } else {
+      onError('error');
+    }
+  }, 2000);
+};
+
+fetchUserFromServer(
+  'Mango',
+  user => console.log(user),
+  error => console.error(error),
+); */
+
+/* const fetchUserFromServer = username => {
+  return new Promise((resolve, reject) => {
+    console.log(`Fetching data for ${username}`);
+
+    setTimeout(() => {
+      // Change value of isSuccess variable to simulate request status
+      const isSuccess = true;
+
+      if (isSuccess) {
+        resolve('success value'); // значенням параметра resolve буде колбек-функція методу then()
+      } else {
+        reject('error'); // значенням параметра reject буде колбек-функція методу catch()
+      }
+    }, 2000);
+  });
+};
+
+fetchUserFromServer('Mango')
+  .then(user => console.log(user))
+  .catch(error => console.error(error)); */
+
+//! ====================================
